@@ -4,6 +4,7 @@ let result = document.getElementById("result")
 let containerEl = document.getElementById("container")
 
 btnEl.addEventListener("click", function(){
+    blankReset()
     let content = inputEl.value
     let pureContent = content.replace(/\s/g, "") //To remove all the white spaces use /\s/g
     let length = pureContent.length   
@@ -11,3 +12,9 @@ btnEl.addEventListener("click", function(){
     result.style.transform = `scale(1)` 
     result.innerHTML = `Word count is ${length} <button onclick="location.reload()">Reload</button>`
 })
+function blankReset(){            //to remove no input errors
+    if(!(inputEl.value)){
+        alert("Please type something!!!")
+        location.reload()
+    }
+}
