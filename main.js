@@ -5,7 +5,8 @@ let containerEl = document.getElementById("container")
 
 btnEl.addEventListener("click", function(){
     let content = inputEl.value
-    let length = content.length   
+    let pureContent = content.replace(/\s/g, "") //To remove all the white spaces use /\s/g
+    let length = pureContent.length   
     containerEl.style.transform = "scale(0)"
     result.style.transform = `scale(1)` 
     result.innerHTML = `Word count is ${length} <button onclick="location.reload()">Reload</button>`
