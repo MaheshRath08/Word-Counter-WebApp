@@ -14,9 +14,9 @@ body{
     justify-content: center;
     width: 500px;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid #ff9100;
     border-radius: 30px;
-    box-shadow: 0 0 50px #ff9100;
+    box-shadow: 0 0 10px 5px #ff9100;
     padding: 5rem;
     transition: 0.3s transform ease-in-out;  
 }
@@ -25,6 +25,7 @@ body{
     margin: 1rem;
     color: white;
     font-weight: bold;
+    letter-spacing: 4px;
 }
 input{
     width: 450px;
@@ -37,9 +38,10 @@ input{
     color: white;
     font-size: 1.3rem;
     text-align: center;
+    box-shadow: 0 0 5px 1px #ff9100;
 }
 input:focus{
-    box-shadow: 0 0 15px #ff9100;
+    box-shadow: 0 0 7px 1px white;
     border-color:  white;
 }
 .container button{
@@ -47,7 +49,7 @@ input:focus{
     height: 40px;
     font-size: 1.3rem;
     background-color: transparent;
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -55,7 +57,7 @@ input:focus{
 }
 button:hover{
     border-color: #ff9100;
-    box-shadow: 0 0 10px #ff9100;
+    box-shadow: 0 0 5px 1px #ff9100;
     color: #ff9100;
 }
 button:active{
@@ -65,7 +67,7 @@ button:active{
 .result{
     height: 400px;
     width: 400px;
-    box-shadow: 0 0 25px #ff9100;
+    box-shadow: 0 0 15px 2px #ff9100;
     border: 5px solid #ff9100;
     margin: 0 auto;
     margin-top: 15rem;
@@ -73,7 +75,7 @@ button:active{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #ff9100;
+    color: #e0dfdf;
     text-align: center;
     font-size: 2.5rem;
     padding: 2rem;
@@ -85,7 +87,7 @@ button:active{
     height: 40px;
     font-size: 1.3rem;
     background-color: transparent;
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -94,6 +96,6 @@ button:active{
 }
 .result button:hover{
     border-color: #ff9100;
-    box-shadow: 0 0 10px #ff9100;
-    color: darkorange;
+    box-shadow: 0 0 5px 1px #ff9100;
+    color: #e0dfdf;
 }

@@ -10,7 +10,7 @@ btnEl.addEventListener("click", function(){
     let length = pureContent.length   
     containerEl.style.transform = "scale(0)"
     result.style.transform = `scale(1)` 
-    result.innerHTML = `Count is ${length} <button onclick="location.reload()">Reload</button>`
+    result.innerHTML = `Number of words ${length} <button onclick="location.reload()">Reload</button>`
 })
 function blankReset(){            //to remove no input errors
     if(!(inputEl.value)){
